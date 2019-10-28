@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thimble Sample</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <center>
+      <div id="title">
+        <h1>Donations for Dorian</h1>
+        <h2>Welcome PA School Community</h2>
+      </div>
+    </center>
+    <br /><br /><br />
+    <div id="home">
+      <button id="dm" onclick="dm()">
+        Ways to Donate Money</button
+        ><br /><br />
+      <button id="hh" onclick="hh()">
+        How you can help</button
+        ><br /><br />
+      <button id="md" onclick="mdi()">
+        More Dorian information
+      </button>
+      <br /><br />
+
+      <div id="para1">
+        <p>
+          Hurricane Dorian devastated many lives in the Bahamas. Now that
+          Hurricane Dorian has finally ended, the PA schools are trying to help. We
+          are trying to make a difference in the recovery efforts. Thousands of
+          people are living in tents and more are homeless. The Red Cross is
+          going in and helping these people. They are setting up tents, giving
+          food, water, and medical supplies. The school is making an effort to
+          raise money for the Red Cross so they can help the people in the
+          Bahamas affected by Hurricane Dorian. The 6C Team students are selling
+          pretzels and collecting donations. Here on this website you can keep
+          track of our success. This is a simple outlet for help. You can also
+          get all of your information on how you can take part in all of the
+          things that we are doing.
+        </p>
+      </div>
+    </div>
+    <script>
+      function mdi() {
+        document.getElementById("home").innerHTML =
+          "<div id='mdib'><div id = 'slideshow'></div><div id='mdipara'><p>Hurricane Dorian was a category five hurricane, the fastest speed. Hurricane Dorian caused so much damage because it stayed over the Bahamas for multiple days causing destruction and chaos throughout. Hurricane Dorian then moved on to America as a less powerful storm. Its main destruction was in the Bahamas. A confirmed 61 people are dead and the number is rising as more people search for survivors or remains.</div><button onclick='back()'class='dmbb' id='mdibb'>Back</button></div>";
+      }
+      function dm() {
+        document.getElementById("home").innerHTML =
+          "<center><div id='dmb'><div id = 'donate'><div id='pdh'><h1>Please Donate</h1></div><br><h2>This is where you can see how many donations have been collected so far and also where you can donate to the cause.</h2><br><h3>If You donate all the money will go directly to the Red Cross who will help the survivors of Dorian. Anything will help, thank you for your donation!</h3><br><div id='donatelink'><a href ='https://www.crowdrise.com/o/en/campaign/welsh-valley-hurricane-dorian-disaster-relief' target='_blank' >Donate Here!</a></div><br></div><div></center><br><button onclick='back()' class='dmbb'>Back</button>";
+      }
+      function hh() {
+        document.getElementById("home").innerHTML =
+          "<div id='hh'><center><div id='hhparaco'><div id='hhtitle'><h1>How You Can Help</h1></div><div id='hhparaunder'><div id=id='hh2'><br><h2>This is where you can take part in everything that the 6C Team is doing for dorian</h2></div><br><br><p>If you want to help there are many things that you can do. The simplest way to help is to buy a pretzel on Mondays and Wednesdays. All of the money will go to the Red Cross. Another way that you can help is by donating through this website if you go to the 'ways to donate tab' and follow through the buttons and links. Any amount helps. The next event that is scheduled is a food drive and collection. A bin will be in the Lobby, more things are currently in the works.</p></div></div></center></div><br><button onclick='back()'class='dmbb' id=>Back</button>";
+      }
+      function back() {
+        document.getElementById("home").innerHTML =
+          " <center></center><br><br><br><div id='home'><button id='dm' onclick='dm()'>Ways to Donate Money</button><br><br><button id='hh' onclick='hh()'> How you can help</button><br><br><button id='md' onclick='mdi()'>More Dorian information</button><br><br> <div id='para1'>      <p>Hurricane Dorian devastated many lives in the Bahamas. Now that Hurricane Dorian has finally ended, the PA schools are trying to help. We are trying to make a difference in the recovery efforts. Thousands of people are living in tents and more are homeless. The Red Cross is going in and helping these people. They are setting up tents, giving food, water, and medical supplies. The school is making an effort to raise money for the Red Cross so they can help the people in the Bahamas affected by Hurricane Dorian. The 6C Team students are selling pretzel's and collecting donations. Here on this website you can keep track of our success. This is a simple outlet for help. You can also get all of your information on how you can take part in all of the things that we are doing</p></div></div>";
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+      #para1{
+        width:400px;
+        font-size:20px;
+        position:relative;
+        left:50px;
+        border: 3px solid #190875;
+        padding: 10px;
+        background-color: #0095ff;
+        color: white;
+        font-family: 'comic-sans-ms', papyrus;
+        top: -500px;
+      }
+      #title{
+        border: 3px solid blue;
+        background-color:#121f70;
+        color: white;
+        width:1000px;
+        font-family: 'Bitter', serif;
+      }
+      button {
+        font-family: 'Roboto', monospace;
+
+        width: 500px;
+        height:150px;
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: ;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #1629a6;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        position: relative;
+        right: -650px;
+
+      }
+
+      button:hover {background-color: #1b38f5}
+
+      button:active {
+        background-color: #05092e;
+        box-shadow: 0 5px #666;
+        transform: translateY(8px);
+
+      }
+
+      html {
+        background: url("https://cdn.pixabay.com/photo/2012/10/26/00/40/cyclone-62957__340.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 400px;
+      }
+      .dmbb{
+        font-size: 30px;
+        width:120px;
+        height:60px;
+
+      }
+      #slideshow{
+        width:600px;
+        height:400px;
+        border: #070947 4px solid;
+        position:relative;
+        right:-50px;
+
+      }
+      #nextbutton{
+        width: 100px;
+        height:70px;
+        font-size: 20px;
+        text-align:center;
+        position: relative;
+        top:-360px;
+      }
+      #backbutton{
+        width: 100px;
+        height:70px;
+        font-size: 20px;
+        text-align:center;
+        position: relative;
+        top:-300px;
+      }
+      #slideshow{
+        animation: bob 25s infinite;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 600px;
+        height:400px;
+      }
+
+      @keyframes bob{
+        0%{
+          background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/1C7D/production/_108639270_abaco_dorian976getty.jpg");
+          /* width: 600px;
+          height:400px;*/
+        }
+        21%{
+          background-image: url("https://s.abcnews.com/images/GMA/190902_gma_zee_hpMain_16x9_992.jpg");
+          /*  width: 600px;
+          height:400px;*/
+        }
+        41%{
+          background-image: url("https://media13.s-nbcnews.com/j/MSNBC/Components/Video/201909/f_mo_abaco_chopper_190903.760;428;7;70;5.jpg");
+          /* width: 600px;
+          height:400px;*/
+        }
+        61%{
+          background-image: url("https://s.w-x.co/getty2_0.jpg");
+          /* width: 600px;
+          height:400px;*/
+        }
+        81%{
+          background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/191006192251-miracle-dog-rescued-hurricane-dorian-trnd-exlarge-169.jpg");
+          /* width: 600px;
+          height:400px;*/
+        }
+        100%{
+          background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/1C7D/production/_108639270_abaco_dorian976getty.jpg");
+          /*width: 600px;
+          height:400px;*/
+        }
+      }
+      #mdipara{
+        width:400px;
+        font-size:20px;
+        position:relative;
+
+        border: 3px solid #190875;
+        padding: 10px;
+        background-color: #0095ff;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        right: -700px;
+        top: -400px;
+      }
+      #donate{
+        border: white 5px solid;
+        background-color: #1d05b3;
+        color: white;
+      }
+      #pdh{
+        border: darkblue 3px solid;
+        border-bottom: white 6px solid;
+        background-color: #1d05b3;
+        border-top: solid #6be1ff 3px;
+        font-family: 'Fjalla One', sans-serif;
+
+      }
+      #donatelink{
+        text-align:bottom;
+        height: 30px;
+        font-size: 25px;
+        border: solid darkblue 3px;
+        border-radius: 50%;
+        width: 200px;
+        background-color: #110369;
+      }
+      a{
+        color: white;
+
+      }
+      #hhparaunder{
+        color: white;
+        background-color: #1934e6;
+        border: #0a1da1 3px solid;
+        width:1200px;
+        font-size:20px;
+
+
+
+      }
+      #hhtitle{
+        color: white;
+        background-color: #1529ad;
+        border: blue 5px solid;
+        width:1200px;
+        font-family: 'Fjalla One', sans-serif;
+
+      }
+      .backbutton{
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        background-color: #085aff;
+        color: white;
+        border-radius:3px;
+
+      }
+
+      #hh2{
+        font-size: 25px;
+        border: white solid 3px;
+        height: 90px;
+      }
+      p{
+        font-family: 'Ubuntu', sans-serif;
+      }
+      #mdibb{
+
+        position:relative;
+        top:-300px;
+
+    </style>
+  </body>
+</html>
